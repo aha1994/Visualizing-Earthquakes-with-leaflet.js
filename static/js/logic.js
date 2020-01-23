@@ -111,7 +111,7 @@ d3.json(data_url, function(dataset){
     legend.addTo(map);
 
     // Adding a Title block to the map
-    var info = L.control({position: 'bottomright'});
+    var info = L.control();
 
     info.onAdd = function (map) {
         this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
